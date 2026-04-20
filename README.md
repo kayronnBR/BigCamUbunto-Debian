@@ -1,7 +1,3 @@
-Aqui está a tradução do texto para o inglês, com as alterações solicitadas nos nomes dos arquivos:
-
------
-
 # BigCam for Ubuntu and Debian
 
 This project adapts **BigCam** (originally from BigLinux) to work perfectly on Linux Mint and other Debian/Ubuntu-based distributions. BigCam uses Artificial Intelligence for camera image processing, offering advanced video features.
