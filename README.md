@@ -62,4 +62,4 @@ O instalador utiliza a flag `--break-system-packages` para garantir que as bibli
 
 ---
 
-> **Aviso:** Este projeto é uma ponte de instalação. O código fonte original pertence à equipe do [BigLinux](https://github.com/biglinux).
+> **Aviso:** Este projeto é uma ponte de instalação. O código fonte original pertence à equipe do [BigLinux](https://github.com/biglinux/bigcam).
