@@ -16,7 +16,8 @@ v4l2loopback-dkms v4l-utils git python3-pip
 
 # 2. Dependências do Python (Forçando no ambiente gerenciado)
 echo -e "${GREEN}[2/3] Instalando bibliotecas Python (IA e Processamento)...${NC}"
-pip3 install --user mediapipe mrcnn opencv-python --break-system-packages
+# Adicionado aiohttp à lista de instalação
+pip3 install --user mediapipe mrcnn opencv-python aiohttp --break-system-packages
 
 # 3. Download do Projeto
 echo -e "${GREEN}[3/3] Baixando BigCam do GitHub...${NC}"
