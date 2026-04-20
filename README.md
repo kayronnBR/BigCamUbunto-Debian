@@ -1,65 +1,76 @@
-# BigCam para ubunto e debian
+Aqui está a tradução do texto para o inglês, com as alterações solicitadas nos nomes dos arquivos:
 
-Este projeto adapta o **BigCam** (original do BigLinux) para funcionar perfeitamente no Linux Mint e outras distribuições baseadas em Debian/Ubuntu. O BigCam utiliza Inteligência Artificial para processamento de imagem de câmera, oferecendo recursos avançados de vídeo.
+-----
 
-## 🚀 Como Instalar e Rodar
+# BigCam for Ubuntu and Debian
 
-click aqui para baixar e extraia o arquivo
-<h1>
-  <a href="https://github.com/kayronnBR/BigCamUbunto-Debian/archive/refs/heads/main.zip">DOWNLOAD</a>
-</h1>
+This project adapts **BigCam** (originally from BigLinux) to work perfectly on Linux Mint and other Debian/Ubuntu-based distributions. BigCam uses Artificial Intelligence for camera image processing, offering advanced video features.
 
-Siga os passos abaixo na ordem indicada para garantir que todas as dependências do sistema e do Python sejam configuradas corretamente.
-LEMBRE DE IR EM PROPRIEDADES DO ARQUIVO PARA VER SE ESTA PERMITIDO EXECUTAR COMO POGRAMA
+## 🚀 How to Install and Run
 
-### 1. Instalação (Primeiro Passo)
-O script `InstalarBigCam.sh` automatiza a instalação das bibliotecas gráficas (GTK4/Adwaita), ferramentas de vídeo (v4l2loopback) e as bibliotecas de IA (Mediapipe, OpenCV).
+Click here to download and extract the file:
 
-**Abra o terminal**
-araste o arquivo `InstalarBigCam.sh` para janela do terminal e aperte ENTER, caso peça senha digite para baixar as dependencias.
+\<h1\>
+\<a href="[https://github.com/kayronnBR/BigCamUbunto-Debian/archive/refs/heads/main.zip](https://github.com/kayronnBR/BigCamUbunto-Debian/archive/refs/heads/main.zip)"\>DOWNLOAD\</a\>
+\</h1\>
 
+Follow the steps below in the indicated order to ensure all system and Python dependencies are correctly configured.
+REMEMBER TO GO TO FILE PROPERTIES TO CHECK IF "ALLOW EXECUTING FILE AS PROGRAM" IS ENABLED.
 
-### 2. Inicialização
-Após concluir a instalação, você pode iniciar o aplicativo usando o script `IniciarBigCam.sh`. Este script detecta automaticamente o diretório do usuário e executa o core em Python.
+### 1\. Installation (First Step)
 
-**Para rodar via terminal:**
-araste o arquivo `IniciarBigCam.sh` para janela do terminal e aperte ENTER para abrir o pograma
+The `InstallerBigCam.sh` script automates the installation of graphics libraries (GTK4/Adwaita), video tools (v4l2loopback), and AI libraries (Mediapipe, OpenCV).
 
----
+**Open the terminal**
+Drag the `InstallerBigCam.sh` file into the terminal window and press ENTER. If prompted for a password, type it to download the dependencies.
 
-## 🛠️ Detalhes dos Scripts
+### 2\. Initialization
 
-### `InstalarBigCam.sh`
-* **Atualização de Repositórios:** Executa `apt update`.
-* **Dependências de Sistema:** Instala o toolkit **GTK4** e **LibAdwaita** para a interface visual, além do **v4l2loopback** para criação de câmeras virtuais.
-* **Dependências Python:** Instala via `pip` as bibliotecas `mediapipe`, `mrcnn` (Mask R-CNN) e `opencv-python`.
-* **Clone Estruturado:** Baixa a versão mais recente do BigCam diretamente do repositório oficial para a sua pasta `~/Downloads`.
+After completing the installation, you can start the application using the `RunBigCam.sh` script. This script automatically detects the user directory and executes the Python core.
 
-### `IniciarBigCam.sh`
-* **Caminho Dinâmico:** Utiliza a variável `$HOME` para localizar o projeto, permitindo que funcione em qualquer computador sem alteração de código.
-* **Verificação de Segurança:** Antes de tentar abrir, o script checa se o arquivo `main.py` realmente existe para evitar erros de execução.
+**To run via terminal:**
+Drag the `RunBigCam.sh` file into the terminal window and press ENTER to open the program.
 
----
+-----
 
-## 💡 Dicas de Uso
+## 🛠️ Script Details
 
-### Adicionar à Lista de Aplicativos (Menu do Mint)
-Se quiser abrir o BigCam como um aplicativo comum sem usar o terminal:
-1. Clique com o botão direito no Menu do Mint -> **Configurar** -> **Menu** -> **Abrir o editor de menu**.
-2. Escolha uma categoria (ex: Som e Vídeo) e clique em **Novo Item**.
-3. No campo **Comando**, clique em "Navegar" e selecione o arquivo `IniciarBigCam.sh`.
-4. Dê o nome de "BigCam" e escolha um ícone de sua preferência.
+### `InstallerBigCam.sh`
 
-caso esteja em outra distro pode utilizar o Pins
-https://flathub.org/pt-BR/apps/io.github.fabrialberio.pinapp
+  * **Repository Update:** Runs `apt update`.
+  * **System Dependencies:** Installs the **GTK4** toolkit and **LibAdwaita** for the visual interface, as well as **v4l2loopback** for creating virtual cameras.
+  * **Python Dependencies:** Installs `mediapipe`, `mrcnn` (Mask R-CNN), and `opencv-python` via `pip`.
+  * **Structured Clone:** Downloads the latest version of BigCam directly from the official repository to your `~/Downloads` folder.
 
-arasta o arquivo `IniciarBigCam.sh` para o terminal e copie o codigo gerado para coloca no (Exec)
-tutorial em video:
-https://youtu.be/09-RfPif_-w?si=5iQTvpJndM_Hlhwj
+### `RunBigCam.sh`
 
-### Notas sobre Python no Mint
-O instalador utiliza a flag `--break-system-packages` para garantir que as bibliotecas de IA sejam instaladas mesmo em versões mais recentes do Linux Mint que possuem ambientes Python gerenciados, garantindo a compatibilidade direta com o sistema.
+  * **Dynamic Path:** Uses the `$HOME` variable to locate the project, allowing it to work on any computer without code changes.
+  * **Security Check:** Before attempting to open, the script checks if the `main.py` file actually exists to avoid execution errors.
 
----
+-----
 
-> **Aviso:** Este projeto é uma ponte de instalação. O código fonte original pertence à equipe do [BigLinux](https://github.com/biglinux/bigcam).
+## 💡 Usage Tips
+
+### Add to Application List (Mint Menu)
+
+If you want to open BigCam as a regular app without using the terminal:
+
+1.  Right-click the Mint Menu -\> **Configure** -\> **Menu** -\> **Open menu editor**.
+2.  Choose a category (e.g., Sound & Video) and click **New Item**.
+3.  In the **Command** field, click "Browse" and select the `RunBigCam.sh` file.
+4.  Name it "BigCam" and choose an icon of your preference.
+
+If you are using another distro, you can use PinApp:
+[https://flathub.org/pt-BR/apps/io.github.fabrialberio.pinapp](https://flathub.org/pt-BR/apps/io.github.fabrialberio.pinapp)
+
+Drag the `RunBigCam.sh` file into the terminal and copy the generated code to paste into the (Exec) field.
+Video tutorial:
+[https://youtu.be/09-RfPif\_-w?si=5iQTvpJndM\_Hlhwj](https://youtu.be/09-RfPif_-w?si=5iQTvpJndM_Hlhwj)
+
+### Notes on Python in Mint
+
+The installer uses the `--break-system-packages` flag to ensure that AI libraries are installed even on newer versions of Linux Mint that have managed Python environments, ensuring direct compatibility with the system.
+
+-----
+
+> **Disclaimer:** This project is an installation bridge. The original source code belongs to the [BigLinux](https://github.com/biglinux/bigcam) team.
