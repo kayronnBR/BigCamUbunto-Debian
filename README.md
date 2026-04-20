@@ -4,6 +4,11 @@ Este projeto adapta o **BigCam** (original do BigLinux) para funcionar perfeitam
 
 ## 🚀 Como Instalar e Rodar
 
+click aqui para baixar e extraia o arquivo
+<h1>
+  <a href="https://github.com/kayronnBR/BigCamUbunto-Debian/archive/refs/heads/main.zip">DOWNLOAD</a>
+</h1>
+
 Siga os passos abaixo na ordem indicada para garantir que todas as dependências do sistema e do Python sejam configuradas corretamente.
 LEMBRE DE IR EM PROPRIEDADES DO ARQUIVO PARA VER SE ESTA PERMITIDO EXECUTAR COMO POGRAMA
 
