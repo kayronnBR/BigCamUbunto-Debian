@@ -2,7 +2,7 @@
 
 # 1. Detecta o diretório home do usuário atual dinamicamente
 # Isso faz o script funcionar em qualquer PC, não só no seu.
-CAMINHO_PROJETO="$HOME/Downloads/BigCamUbunto-Debian-main/usr/share/biglinux/bigcam/main.py"
+CAMINHO_PROJETO="$HOME/Downloads/bigcam/usr/share/biglinux/bigcam/main.py"
 
 # 2. Verifica se o arquivo existe antes de executar
 if [ -f "$CAMINHO_PROJETO" ]; then
