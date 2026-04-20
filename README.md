@@ -7,7 +7,7 @@ Este projeto adapta o **BigCam** (original do BigLinux) para funcionar perfeitam
 Siga os passos abaixo na ordem indicada para garantir que todas as dependências do sistema e do Python sejam configuradas corretamente.
 LEMBRE DE IR EM PROPRIEDADES DO ARQUIVO PARA VER SE ESTA PERMITIDO EXECUTAR COMO POGRAMA
 
-### 1. Instalação (Primeiro Passo)
+# 1. Instalação (Primeiro Passo)
 O script `InstalarBigCam.sh` automatiza a instalação das bibliotecas gráficas (GTK4/Adwaita), ferramentas de vídeo (v4l2loopback) e as bibliotecas de IA (Mediapipe, OpenCV).
 
 **Abra o terminal**
