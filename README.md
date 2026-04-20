@@ -7,7 +7,7 @@ This project adapts **BigCam** (originally from BigLinux) to work perfectly on L
 Click here to download and extract the file:
 
 <h1>
-<a href="https://github.com/kayronnBR/BigCamUbunto-Debian/archive/refs/heads/main.zip)">DOWNLOAD</a>
+<a href="https://github.com/kayronnBR/BigCamUbunto-Debian/archive/refs/heads/main.zip">DOWNLOAD</a>
 </h1>
 
 Follow the steps below in the indicated order to ensure all system and Python dependencies are correctly configured.
