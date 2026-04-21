@@ -12,7 +12,7 @@ echo -e "${GREEN}[1/4] Instalando bibliotecas gráficas e de sistema...${NC}"
 sudo apt update
 sudo apt install -y libgtk-4-dev libadwaita-1-dev gir1.2-adw-1 \
 python3-gi python3-gi-cairo gir1.2-gtk-4.0 \
-v4l2loopback-dkms v4l-utils git python3-pip
+v4l2loopback-dkms v4l-utils git python3-pip libnotify-bin
 
 # 2. Dependências do Python
 echo -e "${GREEN}[2/4] Instalando bibliotecas Python (IA e Processamento)...${NC}"
@@ -27,26 +27,31 @@ git clone https://github.com/biglinux/bigcam.git
 # 4. Criando o Atalho no Menu (.desktop)
 echo -e "${GREEN}[4/4] Criando atalho no menu de aplicativos...${NC}"
 
-# Caminho para o ícone e para o executável
 ICON_PATH="$HOME/bigcam/usr/share/icons/hicolor/scalable/apps/bigcam.svg"
-EXEC_PATH="python3 $HOME/bigcam/usr/share/biglinux/bigcam/main.py"
+MAIN_PY="$HOME/bigcam/usr/share/biglinux/bigcam/main.py"
+EXEC_COMMAND="python3 $MAIN_PY"
 
-# Criando o arquivo .desktop
 mkdir -p ~/.local/share/applications
 
 cat <<EOF > ~/.local/share/applications/bigcam.desktop
 [Desktop Entry]
 Name=BigCam
 Comment=Câmera com Inteligência Artificial
-Exec=$EXEC_PATH
+Exec=$EXEC_COMMAND
 Icon=$ICON_PATH
 Terminal=false
 Type=Application
 Categories=Video;AudioVideo;
 EOF
 
-# Dar permissão de execução ao atalho
 chmod +x ~/.local/share/applications/bigcam.desktop
 
+# Finalização, Notificação e Execução
 echo -e "${BLUE}=== Instalação Concluída! ===${NC}"
-echo -e "Você já pode encontrar o ${GREEN}BigCam${NC} no seu menu de aplicativos."
+
+# Envia notificação para o sistema
+notify-send "BigCam" "bigcam instalado" -i "$ICON_PATH"
+
+# Abre o aplicativo em segundo plano para não travar o terminal
+echo -e "${GREEN}Iniciando o BigCam...${NC}"
+$EXEC_COMMAND &
