@@ -31,10 +31,6 @@ Drag the `InstallerBigCam.sh` file into the terminal window and press ENTER. If 
   * **Python Dependencies:** Installs `mediapipe`, `mrcnn` (Mask R-CNN), and `opencv-python` via `pip`.
   * **Structured Clone:** Downloads the latest version of BigCam directly from the official repository to your `~/Downloads` folder.
 
-### Notes on Python in Mint
-
-The installer uses the `--break-system-packages` flag to ensure that AI libraries are installed even on newer versions of Linux Mint that have managed Python environments, ensuring direct compatibility with the system.
-
 -----
 
 > **Disclaimer:** This project is an installation bridge. The original source code belongs to the [BigLinux](https://github.com/biglinux/bigcam) team.
