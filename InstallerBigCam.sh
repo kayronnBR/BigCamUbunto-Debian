@@ -16,7 +16,8 @@ v4l2loopback-dkms v4l-utils git python3-pip libnotify-bin
 
 # 2. Dependências do Python
 echo -e "${GREEN}[2/4] Instalando bibliotecas Python (IA e Processamento)...${NC}"
-pip3 install --user mediapipe mrcnn opencv-python aiohttp --break-system-packages
+# zorin os qrcode[pil]
+pip3 install --user mediapipe mrcnn opencv-python aiohttp qrcode[pil] --break-system-packages
 
 # 3. Download e Organização
 echo -e "${GREEN}[3/4] Baixando e movendo BigCam para a Home...${NC}"
