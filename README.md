@@ -20,13 +20,6 @@ The `InstallerBigCam.sh` script automates the installation of graphics libraries
 **Open the terminal**
 Drag the `InstallerBigCam.sh` file into the terminal window and press ENTER. If prompted for a password, type it to download the dependencies.
 
-### 2\. Initialization
-
-After completing the installation, you can start the application using the `RunBigCam.sh` script. This script automatically detects the user directory and executes the Python core.
-
-**To run via terminal:**
-Drag the `RunBigCam.sh` file into the terminal window and press ENTER to open the program.
-
 -----
 
 ## 🛠️ Script Details
@@ -37,31 +30,6 @@ Drag the `RunBigCam.sh` file into the terminal window and press ENTER to open th
   * **System Dependencies:** Installs the **GTK4** toolkit and **LibAdwaita** for the visual interface, as well as **v4l2loopback** for creating virtual cameras.
   * **Python Dependencies:** Installs `mediapipe`, `mrcnn` (Mask R-CNN), and `opencv-python` via `pip`.
   * **Structured Clone:** Downloads the latest version of BigCam directly from the official repository to your `~/Downloads` folder.
-
-### `RunBigCam.sh`
-
-  * **Dynamic Path:** Uses the `$HOME` variable to locate the project, allowing it to work on any computer without code changes.
-  * **Security Check:** Before attempting to open, the script checks if the `main.py` file actually exists to avoid execution errors.
-
------
-
-## 💡 Usage Tips
-
-### Add to Application List (Mint Menu)
-
-If you want to open BigCam as a regular app without using the terminal:
-
-1.  Right-click the Mint Menu -\> **Configure** -\> **Menu** -\> **Open menu editor**.
-2.  Choose a category (e.g., Sound & Video) and click **New Item**.
-3.  In the **Command** field, click "Browse" and select the `RunBigCam.sh` file.
-4.  Name it "BigCam" and choose an icon of your preference.
-
-If you are using another distro, you can use PinApp:
-[https://flathub.org/pt-BR/apps/io.github.fabrialberio.pinapp](https://flathub.org/pt-BR/apps/io.github.fabrialberio.pinapp)
-
-Drag the `RunBigCam.sh` file into the terminal and copy the generated code to paste into the (Exec) field.
-Video tutorial:
-[https://youtu.be/09-RfPif\_-w?si=5iQTvpJndM\_Hlhwj](https://youtu.be/09-RfPif_-w?si=5iQTvpJndM_Hlhwj)
 
 ### Notes on Python in Mint
 
