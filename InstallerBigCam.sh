@@ -5,7 +5,7 @@ BLUE='\033[0;34m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-echo -e "${BLUE}=== Instalador Automatizado BigCam para Linux Mint ===${NC}"
+echo -e "${BLUE}=== Instalador Automatizado BigCam para base ubunto/debian ===${NC}"
 
 # 1. Dependências do Sistema
 echo -e "${GREEN}[1/4] Instalando bibliotecas gráficas e de sistema...${NC}"
